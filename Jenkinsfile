@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        IMAGE_NAME = "YOUR_DOCKERHUB_USERNAME/student-app"
+        IMAGE_NAME = "dhruti2005/jenkins_CICD"
         TAG = "${BUILD_NUMBER}"
     }
     stages {
         stage ('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/YOUR_GITHUB_USERNAME/jenkins_CICD.git'
+                git branch: 'main', url: 'https://github.com/dhrutipandya123/jenkins_CICD.git'
             }
         }
         stage ('Build Docker Image') {
