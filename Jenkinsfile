@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE_NAME = "dhruti2005/jenkins_CICD"
+        IMAGE_NAME = "dhruti2005/jenkins-cicd"
         TAG = "${BUILD_NUMBER}"
     }
     stages {
